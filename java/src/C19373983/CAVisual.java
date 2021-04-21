@@ -5,6 +5,9 @@ import ie.tudublin.*;
 public class CAVisual extends Visual{
 
     centerBox box;
+
+    float[] lerpedBuffer;
+
     int userOption = 0;
 
 public void settings(){
@@ -17,6 +20,9 @@ public void settings(){
     //fullScreen(P3D, SPAN); 
 }
 
+    float y = 200;
+    float lerpedY = y;
+
     public void setup()
     {
         startMinim();
@@ -24,6 +30,8 @@ public void settings(){
         loadAudio("heatwaves.mp3");
 
         box = new centerBox(this);
+
+        lerpedBuffer = new float[width];
     }
 
     public void keyPressed()
@@ -39,8 +47,38 @@ public void settings(){
         }
     }
 
+    float lerpedAverage = 0;
+
+
     public void draw(){
         background(0);
+
+        float average = 0;
+        float sum = 0;
+
+        // Calculate the average of the buffer
+        for (int i = 0; i < getAudioBuffer().size(); i ++)
+        {
+            sum += abs(getAudioBuffer().get(i));
+        }
+        average = sum / getAudioBuffer().size();
+        // Move lerpedAverage 10% closer to average every frame
+        lerpedAverage = lerp(lerpedAverage, average, 0.1f);
+
+        try
+        {
+            // Call this if you want to use FFT data
+            calculateFFT(); 
+        }
+        catch(VisualException e)
+        {
+            e.printStackTrace();
+        }
+        // Call this is you want to use frequency bands
+        calculateFrequencyBands(); 
+
+        // Call this is you want to get the average amplitude
+        calculateAverageAmplitude(); 
     
 
     switch(userOption){
