@@ -11,7 +11,6 @@ public class centerBox {
     }
 
     public void render(){
-                      
              
     }
 

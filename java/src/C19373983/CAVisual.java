@@ -26,6 +26,7 @@ public void settings(){
 
     public void setup()
     {
+        colorMode(HSB);
         startMinim();
 
         loadAudio("heatwaves.mp3");
@@ -91,7 +92,7 @@ public void settings(){
         }
 
         case 1: {
-            //box.render();
+            box.render();
             break;
         }
 
