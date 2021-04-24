@@ -4,14 +4,14 @@ import processing.core.*;
 
 public class Eye {
     
-    CAVisual cv;
+    CAVisual eye;
 
-    public Eye(CAVisual cv){
-        this.cv = cv;
+    public Eye(CAVisual eye){
+        this.eye = eye;
     }
 
     public void render(){
-           
+        
     }
 
 }
