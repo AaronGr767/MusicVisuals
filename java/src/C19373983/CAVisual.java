@@ -5,7 +5,7 @@ import ie.tudublin.*;
 public class CAVisual extends Visual{
 
     centerBox box;
-    Eye eye;
+    Eye ed;
 
     float[] lerpedBuffer;
 
@@ -31,6 +31,7 @@ public void settings(){
         loadAudio("heatwaves.mp3");
 
         box = new centerBox(this);
+        ed = new Eye(this);
 
         lerpedBuffer = new float[width];
     }
@@ -85,12 +86,12 @@ public void settings(){
     switch(userOption){
 
         case 0: {
-            eye.render();
+            ed.render();
             break;
         }
 
         case 1: {
-            box.render();
+            //box.render();
             break;
         }
 
