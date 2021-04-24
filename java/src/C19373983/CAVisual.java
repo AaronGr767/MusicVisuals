@@ -5,6 +5,7 @@ import ie.tudublin.*;
 public class CAVisual extends Visual{
 
     centerBox box;
+    Eye eye;
 
     float[] lerpedBuffer;
 
@@ -84,11 +85,12 @@ public void settings(){
     switch(userOption){
 
         case 0: {
-            box.render();
+            eye.render();
             break;
         }
 
         case 1: {
+            box.render();
             break;
         }
 

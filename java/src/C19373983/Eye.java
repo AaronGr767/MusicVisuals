@@ -2,11 +2,11 @@ package C19373983;
 
 import processing.core.*;
 
-public class centerBox {
+public class Eye {
     
     CAVisual cv;
 
-    public centerBox(CAVisual cv){
+    public Eye(CAVisual cv){
         this.cv = cv;
     }
 
