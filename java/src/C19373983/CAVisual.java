@@ -109,6 +109,9 @@ public void settings(){
             box.render();
             break;
         }
+        case 4: {
+            break;
+        }
     }
     }
 

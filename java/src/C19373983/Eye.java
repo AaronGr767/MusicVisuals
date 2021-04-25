@@ -19,7 +19,7 @@ public class Eye {
         float c1 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 120, 255);
 
         cv.stroke(c1, 255, 255);
-        cv.fill(c1+40, 255, 255);
+        cv.fill(c1+75, 255, 255);
         cv.ellipse(cv.width / 2, cv.height / 2, 600 + (cv.lerpedAverage * 100), 200 + (cv.lerpedAverage * 200));
 
         cv.strokeWeight(3);
@@ -39,8 +39,8 @@ public class Eye {
 
         for(int i = 0 ; i < 140 ; i ++){
 
-            //float c2 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 230, 255);
-            cv.stroke(0, 255, 200);
+            float c2 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 0, 255);
+            cv.stroke(c2, 255, 255);
             float theta = i * (thetaInc + cv.lerpedAverage * 5);
 
             double st = Math.sin(theta);

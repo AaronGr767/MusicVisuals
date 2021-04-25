@@ -20,7 +20,9 @@ public class SideBox {
         angle += 0.01f;
         float b3 = 50 + (20 * cv.lerpedAverage * 10);
         
-        cv.stroke(c+180, 255, 255);
+        cv.stroke(c, 255, 255);
+        cv.fill(c + 220, 255, 255);
+
         cv.pushMatrix();
         cv.translate(cv.width / 5, cv.height / 5, 0);
         cv.rotateY(angle);
@@ -28,7 +30,6 @@ public class SideBox {
         cv.box(b3);
         cv.popMatrix();
 
-        cv.stroke(c+180, 255, 255);
         cv.pushMatrix();
         cv.translate(cv.width / 5, cv.height * 8/10, 0);
         cv.rotateY(angle);
@@ -36,7 +37,6 @@ public class SideBox {
         cv.box(b3);
         cv.popMatrix();
 
-        cv.stroke(c+180, 255, 255);
         cv.pushMatrix();
         cv.translate(cv.width * 8/10, cv.height / 5, 0);
         cv.rotateY(angle);
@@ -44,7 +44,6 @@ public class SideBox {
         cv.box(b3);
         cv.popMatrix();
 
-        cv.stroke(c+180, 255, 255);
         cv.pushMatrix();
         cv.translate(cv.width * 8/10, cv.height * 8/10, 0);
         cv.rotateY(angle);

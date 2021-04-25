@@ -20,8 +20,8 @@ public class centerBox {
         cv.stroke(c, 255, 255);
         cv.noFill();
         angle += 0.01f;
-        float b1 = 100 + (20 * cv.lerpedAverage * 10);
-        float b2 = 50 + (20 * cv.lerpedAverage * 10);
+        float b1 = 200 + (20 * cv.lerpedAverage * 10);
+        float b2 = 100 + (20 * cv.lerpedAverage * 10);
         
         cv.stroke(c+160, 255, 255);
         cv.pushMatrix();
@@ -43,7 +43,7 @@ public class centerBox {
         cv.translate(cv.width / 2, cv.height / 2, 0);
         cv.stroke(c, 255, 255);
         cv.fill(c, 255, 255);
-        cv.sphere(28 + (cv.lerpedAverage * 100));     
+        cv.sphere(56 + (cv.lerpedAverage * 100));     
     }
 
 }
