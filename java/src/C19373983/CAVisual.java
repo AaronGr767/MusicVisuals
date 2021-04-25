@@ -7,6 +7,7 @@ public class CAVisual extends Visual{
     centerBox box;
     Eye ed;
     SideBox sbox;
+    WaveForm wform;
 
     float[] lerpedBuffer;
 
@@ -35,6 +36,7 @@ public void settings(){
         box = new centerBox(this);
         ed = new Eye(this);
         sbox = new SideBox(this);
+        wform = new WaveForm(this);
 
         lerpedBuffer = new float[width];
     }
@@ -110,6 +112,7 @@ public void settings(){
             break;
         }
         case 4: {
+            wform.render();
             break;
         }
     }
