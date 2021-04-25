@@ -12,14 +12,14 @@ My assignment's visuals were based upon my song choice, 'Heat Waves' by Glass An
 The first visual is an eye with a vibrant spiral for the iris. This image is then joined by 4 bright cubes which alter in unison with the beat. The next visual is 2 rotating cubes with a sphere inside of it. The 4 cubes then return to join the previous 2 rotating cubes. Finally there is a waveform, split into 2 different sides which contrast each other. 
 
 # Instructions
--The user runs the program.
--The user presses the space bar to play the song (If already pressed, the space bar resets the song to its beginning).
--The user uses keys 0-4 to change the program's visual appearance.
--Key 0 - This key is the default if the user doesn't choose a specific number, it renders an eye with a spiral iris.
--Key 1 - Same as key 1 but with the addition of 4 spinning cubes in each corner of the screen.
--Key 2 - 2 rotating cubes with an inner sphere.
--Key 3 - Same as key 2 but with the addition of 4 spinning cubes in each corner of the screen.
--Key 4 - Renders an inverted waveform and normal waveform that mirror each other.
+- The user runs the program.
+- The user presses the space bar to play the song (If already pressed, the space bar resets the song to its beginning).
+- The user uses keys 0-4 to change the program's visual appearance.
+- Key 0 - This key is the default if the user doesn't choose a specific number, it renders an eye with a spiral iris.
+- Key 1 - Same as key 1 but with the addition of 4 spinning cubes in each corner of the screen.
+- Key 2 - 2 rotating cubes with an inner sphere.
+- Key 3 - Same as key 2 but with the addition of 4 spinning cubes in each corner of the screen.
+- Key 4 - Renders an inverted waveform and normal waveform that mirror each other.
 
 # How it works
 This program is comprised of 4 visuals wich have their own classes and which each have seperate instances in the CAVisual class. The CAVisual class is itself an extension of the Visual class.
