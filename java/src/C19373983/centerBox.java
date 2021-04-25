@@ -37,9 +37,10 @@ public class centerBox {
         cv.box(b2);
         cv.popMatrix();
         
+        cv.translate(cv.width / 2, cv.height / 2, 0);
         cv.stroke(c, 255, 255);
         cv.fill(c, 255, 255);
-        cv.ellipse(512, 256, 50 + (cv.lerpedAverage * 100), 50 + (cv.lerpedAverage * 100));     
+        cv.sphere(28 + (cv.lerpedAverage * 100));     
     }
 
 }
