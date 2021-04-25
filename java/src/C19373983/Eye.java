@@ -24,7 +24,7 @@ public class Eye {
 
         cv.strokeWeight(3);
         cv.stroke(c1, 255, 255);
-        cv.fill(c1-50, 255, 200);
+        cv.fill(0, 0, 0);
         cv.ellipse(cv.width / 2, cv.height / 2, 200 + (cv.lerpedAverage * 200), 200 + (cv.lerpedAverage * 200));
         
         double d = Math.PI;
@@ -40,7 +40,7 @@ public class Eye {
         for(int i = 0 ; i < 140 ; i ++){
 
             //float c2 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 230, 255);
-            cv.stroke(0, 300, 255, 100);
+            cv.stroke(0, 255, 200);
             float theta = i * (thetaInc + cv.lerpedAverage * 5);
 
             double st = Math.sin(theta);
