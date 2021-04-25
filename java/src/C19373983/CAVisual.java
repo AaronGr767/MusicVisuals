@@ -41,8 +41,8 @@ public void settings(){
         lerpedBuffer = new float[width];
     }
 
-    public void keyPressed()
-    {
+    public void keyPressed(){
+
         if (key == ' ')
         {
             getAudioPlayer().cue(0);
@@ -58,6 +58,7 @@ public void settings(){
 
 
     public void draw(){
+
         background(0);
 
         float average = 0;
@@ -88,34 +89,34 @@ public void settings(){
         calculateAverageAmplitude(); 
     
 
-    switch(userOption){
+        switch(userOption){
 
-        case 0: {
-            ed.render();
-            break;
-        }
+            case 0: {
+                ed.render();
+                break;
+            }
 
-        case 1: {
-            ed.render();
-            sbox.render();
-            break;
-        }
+            case 1: {
+                ed.render();
+                sbox.render();
+                break;
+            }
 
-        case 2: {
-            box.render();
-            break;
-        }
+            case 2: {
+                box.render();
+                break;
+            }
 
-        case 3: {
-            sbox.render();
-            box.render();
-            break;
+            case 3: {
+                sbox.render();
+                box.render();
+                break;
+            }
+            case 4: {
+                wform.render();
+                break;
+            }
         }
-        case 4: {
-            wform.render();
-            break;
-        }
-    }
     }
 
 }

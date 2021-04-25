@@ -20,6 +20,7 @@ public class centerBox {
         cv.stroke(c, 255, 255);
         cv.noFill();
         angle += 0.01f;
+        
         float b1 = 200 + (20 * cv.lerpedAverage * 10);
         float b2 = 100 + (20 * cv.lerpedAverage * 10);
         
