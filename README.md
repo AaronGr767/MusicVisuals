@@ -106,56 +106,12 @@ switch(userOption){
 
 # What I am most proud of in the assignment
 
-# Markdown Tutorial
+I'm most proud of the eye visual which is the default option. The render went through many different alterations in which its design changed dramatically. It took some time for me to be able to give the eye the exact amount of reactivity I wanted. I think it's a great visual contrast to see how much the eye changes from its original appearance to the pulsating aesthetic after the beat drops. I also went through many different colour schemes with this visual before deciding on the final design, which starts so unassuming before changing to a dramatically more vibrant and energetic appearance which I think many of us go through in the beginning of the summer months.
 
-This is *emphasis*
+I was also quite proud of the inverted waveform due to its unique appearance which I stumbled on by accident when I made a typo in the line() method. I thought the contrast of bright colours and black were an excellent visual.
 
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
+# Images
+![- Key 0:](images/key1.jpg)
 
 This is an image using an absolute URL:
 
