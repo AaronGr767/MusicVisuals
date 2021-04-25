@@ -20,14 +20,12 @@ public class Eye {
 
         cv.stroke(c1, 255, 255);
         cv.fill(c1+40, 255, 255);
-        cv.ellipse(cv.width / 2, cv.height / 2, 600 + (cv.lerpedAverage * 100), 200 + (cv.lerpedAverage * 100));
+        cv.ellipse(cv.width / 2, cv.height / 2, 600 + (cv.lerpedAverage * 100), 200 + (cv.lerpedAverage * 200));
 
         cv.strokeWeight(3);
         cv.stroke(c1, 255, 255);
         cv.fill(c1-50, 255, 200);
-        cv.ellipse(cv.width / 2, cv.height / 2, 200 + (cv.lerpedAverage * 100), 200 + (cv.lerpedAverage * 100));
- 
-   
+        cv.ellipse(cv.width / 2, cv.height / 2, 200 + (cv.lerpedAverage * 200), 200 + (cv.lerpedAverage * 200));
         
         double d = Math.PI;
         float dp = (float)d;

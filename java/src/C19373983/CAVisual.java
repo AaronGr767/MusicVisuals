@@ -6,6 +6,7 @@ public class CAVisual extends Visual{
 
     centerBox box;
     Eye ed;
+    SideBox sbox;
 
     float[] lerpedBuffer;
 
@@ -33,6 +34,7 @@ public void settings(){
 
         box = new centerBox(this);
         ed = new Eye(this);
+        sbox = new SideBox(this);
 
         lerpedBuffer = new float[width];
     }
@@ -92,11 +94,19 @@ public void settings(){
         }
 
         case 1: {
-            box.render();
+            ed.render();
+            sbox.render();
             break;
         }
 
         case 2: {
+            box.render();
+            break;
+        }
+
+        case 3: {
+            sbox.render();
+            box.render();
             break;
         }
     }
