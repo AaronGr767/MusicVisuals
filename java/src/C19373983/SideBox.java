@@ -21,7 +21,7 @@ public class SideBox {
         float b3 = 50 + (20 * cv.lerpedAverage * 10);
         
         cv.stroke(c, 255, 255);
-        cv.fill(c + 220, 255, 255);
+        cv.fill(c + 120, 255, 255);
 
         cv.pushMatrix();
         cv.translate(cv.width / 5, cv.height / 5, 0);
