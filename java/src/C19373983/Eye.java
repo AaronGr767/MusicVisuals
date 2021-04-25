@@ -18,11 +18,14 @@ public class Eye {
         //float c = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 80, 255); 
         float c1 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 120, 255);
 
+        cv.stroke(c1, 255, 200);
+        cv.fill(c1+40, 255, 200);
+        cv.ellipse(512, 256, 300 + (cv.lerpedAverage * 100), 100 + (cv.lerpedAverage * 100));
+
         cv.stroke(c1, 255, 255);
+        cv.fill(c1-50, 255, 200);
         cv.ellipse(512, 256, 100 + (cv.lerpedAverage * 100), 100 + (cv.lerpedAverage * 100));
  
-        cv.stroke(c1, 255, 200);
-        cv.ellipse(512, 256, 300 + (cv.lerpedAverage * 100), 100 + (cv.lerpedAverage * 100));
    
         
         double d = Math.PI;
@@ -37,8 +40,8 @@ public class Eye {
 
         for(int i = 0 ; i < 80 ; i ++){
 
-            float c2 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 230, 255);
-            cv.stroke(c2, 300, 255, 100);
+            //float c2 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 230, 255);
+            cv.stroke(0, 300, 255, 100);
             float theta = i * (thetaInc + cv.lerpedAverage * 5);
 
             double st = Math.sin(theta);
