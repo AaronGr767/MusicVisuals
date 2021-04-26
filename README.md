@@ -111,7 +111,7 @@ I'm most proud of the eye visual which is the default option. The render went th
 I was also quite proud of the inverted waveform due to its unique appearance which I stumbled on by accident when I made a typo in the line() method. I thought the contrast of bright colours and black were an excellent visual.
 
 # Images
-![- Key 0:](images/key1.jpg)
+![- Key 0:](images/key0.jpg)
 
 This is an image using an absolute URL:
 
