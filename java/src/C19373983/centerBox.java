@@ -19,8 +19,9 @@ public class centerBox {
         float c = PApplet.map(cv.lerpedAverage, 0, 1, 0, 255);
         cv.stroke(c, 255, 255);
         cv.noFill();
-        angle += 0.01f;
         
+        angle += 0.01f;
+
         float b1 = 200 + (20 * cv.lerpedAverage * 10);
         float b2 = 100 + (20 * cv.lerpedAverage * 10);
         
