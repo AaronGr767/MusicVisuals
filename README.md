@@ -113,7 +113,23 @@ I was also quite proud of the inverted waveform due to its unique appearance whi
 # Images
 - key 0:
 
+![key0](https://github.com/AaronGr767/MusicVisuals/blob/master/images/key0.JPG)
+
+- key 1:
+
+![key0](https://github.com/AaronGr767/MusicVisuals/blob/master/images/key1.JPG)
+
+- key 2:
+
+![key0](https://github.com/AaronGr767/MusicVisuals/blob/master/images/key2.JPG)
+
+- key 3:
+
 ![key0](https://github.com/AaronGr767/MusicVisuals/blob/master/images/key%203.JPG)
+
+- key 4:
+
+![key0](https://github.com/AaronGr767/MusicVisuals/blob/master/images/key3.JPG)
 
 # Youtube Video
 
