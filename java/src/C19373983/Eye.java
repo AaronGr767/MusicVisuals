@@ -15,7 +15,6 @@ public class Eye {
         cv.strokeWeight(4);
         cv.noFill(); 
 
-        //float c = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 80, 255); 
         float c1 = PApplet.map(cv.getSmoothedAmplitude(), 0, 1, 120, 255);
 
         cv.stroke(c1, 255, 255);
