@@ -133,5 +133,5 @@ I was also quite proud of the inverted waveform due to its unique appearance whi
 
 # Youtube Video
 
-[![YouTube]https://youtu.be/ha5Mw7X2_cc
+[![YouTube]https://www.youtube.com/watch?v=Kvrq0nuypg8
 
